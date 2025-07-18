@@ -25,6 +25,14 @@ int main() {
     //trying to dequeue when it empty
     q.dequeue();
 
-    
+    //Queue is empty
+    if(q.Empty()){
+        cout<<"Queue is empty";
+    }
+    //Queue is full
+    if(q.Full()){
+        cout<<"Queue is full";
+    }
+
     return 0;
 }
