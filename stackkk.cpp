@@ -3,26 +3,26 @@
 int main() {
     Stac s;
 
-    // Testing push
+    // Push
     s.push(10);
     s.push(20);
     s.push(30);
-    cout << "Stack after pushing 10, 20, 30: ";
+    cout << "Stack after elements ";
     s.PrintStack();
 
-    // Testing peek
+    // Peek
     cout << "Peek (Top Element): ";
     s.peek();
 
-    // Testing pop
+    // Pop
     s.pop();
     cout << "Stack after one pop: ";
     s.PrintStack();
 
-    // Testing multiple pops
+    // Multiple pops
     s.pop();
     s.pop();
-    cout << "Stack after popping all elements: ";
+    cout << "Stack after popping elements: ";
     s.PrintStack();
 
     // Trying to pop when empty
@@ -31,5 +31,11 @@ int main() {
     // Trying to peek when empty
     s.peek();
 
+    if(s.Empty()){
+        cout<<"Stack is Empty";
+    }
+    if(s.Full()){
+        cout<<"Stack is Full";
+    }
     return 0;
 }
